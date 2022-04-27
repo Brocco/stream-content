@@ -1,0 +1,7 @@
+{
+  "version": 2,
+  "projects": {
+    "alert-overlay": "apps/alert-overlay",
+    "alert-overlay-e2e": "apps/alert-overlay-e2e"
+  }
+}

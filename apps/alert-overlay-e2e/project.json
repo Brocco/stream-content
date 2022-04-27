@@ -1,0 +1,28 @@
+{
+  "root": "apps/alert-overlay-e2e",
+  "sourceRoot": "apps/alert-overlay-e2e/src",
+  "projectType": "application",
+  "targets": {
+    "e2e": {
+      "executor": "@nrwl/cypress:cypress",
+      "options": {
+        "cypressConfig": "apps/alert-overlay-e2e/cypress.json",
+        "devServerTarget": "alert-overlay:serve:development"
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "alert-overlay:serve:production"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/alert-overlay-e2e/**/*.{js,ts}"]
+      }
+    }
+  },
+  "tags": [],
+  "implicitDependencies": ["alert-overlay"]
+}
