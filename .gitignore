@@ -39,3 +39,6 @@ testem.log
 Thumbs.db
 
 .angular
+
+# Environment Files
+apps/alert-overlay/src/environments/environment*.ts
